@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "316724174693",
+    "project_id": "refactory-first",
+    "storage_bucket": "refactory-first.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:316724174693:android:c99f39124883ebf96d4b8c",
+        "android_client_info": {
+          "package_name": "com.example.mini_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "316724174693-dp52sk4dau0ot9f3rn61agj2ts3bd8vu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mini_app",
+            "certificate_hash": "d95f9c962cd3582da37c602e4e1c7c1f07c56bee"
+          }
+        },
+        {
+          "client_id": "316724174693-3oic4vggtsbrmlf3u8d5e59lgec8e3es.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvf_ZwEWG0kFRe8TWVzpOdh9gvdH72Zok"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "316724174693-3oic4vggtsbrmlf3u8d5e59lgec8e3es.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
