@@ -10,7 +10,7 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final auth = RepositoryProvider.of<AuthService>(context);
+    // final auth = RepositoryProvider.of<AuthService>(context);
     final user = FirebaseAuth.instance.currentUser!;
     String userProfile = user.photoURL ?? 'null';
     return Scaffold(
@@ -35,9 +35,13 @@ class HomePage extends StatelessWidget {
             child: ListTile(
               leading: userProfile == 'null'
                   ? CircleAvatar(backgroundImage: NetworkImage(userProfile))
-                  : Container(),
-              title: Text(user.displayName ?? '-'),
-              subtitle: Text(user.email ?? '-'),
+                  : CircleAvatar(backgroundColor: Colors.yellow),
+              title: Text(
+                user.displayName ?? '-',
+                overflow: TextOverflow.ellipsis,
+              ),
+              subtitle:
+                  Text(user.email ?? '-', overflow: TextOverflow.ellipsis),
               trailing: IconButton(
                   onPressed: () {
                     AuthService().signOut();

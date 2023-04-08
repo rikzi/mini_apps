@@ -22,6 +22,4 @@ class FetchSuccess extends FetchblocState {
   List<Object> get props => [result];
 }
 
-class FetchingHiveSuccess extends FetchblocState{
-  clas
-}
+class FetchingHiveSuccess extends FetchblocState {}

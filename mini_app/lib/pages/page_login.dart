@@ -12,7 +12,7 @@ class LoginPage extends StatefulWidget {
 class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
-    final auth = RepositoryProvider.of<AuthService>(context);
+    // final auth = RepositoryProvider.of<AuthService>(context);
     return Scaffold(
         backgroundColor: Colors.yellow.shade200,
         body: Center(

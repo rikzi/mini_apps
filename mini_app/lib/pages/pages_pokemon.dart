@@ -35,8 +35,10 @@ class PokemonPages extends StatelessWidget {
               child: ListTile(
                 leading:
                     CircleAvatar(backgroundImage: NetworkImage(userProfile)),
-                title: Text(user.displayName ?? '-'),
-                subtitle: Text(user.email ?? '-'),
+                title: Text(user.displayName ?? '-',
+                    overflow: TextOverflow.ellipsis),
+                subtitle:
+                    Text(user.email ?? '-', overflow: TextOverflow.ellipsis),
                 trailing: IconButton(
                     onPressed: () {
                       AuthService().signOut();
